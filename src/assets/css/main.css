@@ -1,0 +1,367 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ *
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+body{
+  overflow-x: hidden;
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 50%;
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+/* carousel */
+#slides_control {
+  padding: 5px 15px;
+}
+
+ /*add customisation for angular validation*/
+.form-group .help-block {
+  display: none;
+}
+
+.form-group.has-error .help-block {
+  display: block;
+}
+
+
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+
+.bottom5 { margin-bottom:5px; }
+.bottom7 { margin-bottom:7px; }
+.bottom10 { margin-bottom:10px; }
+.bottom15 { margin-bottom:15px; }
+.bottom17 { margin-bottom:17px; }
+.bottom30 { margin-bottom:30px; }
+
+.padding2 { padding:2px; }
+.padding3 { padding:3px; }
+.padding5 { padding:5px; }
+.padding7 { padding:7px; }
+.padding10 { padding:10px; }
+.padding15 { padding:15px; }
+.padding17 { padding:17px; }
+.padding30 { padding:30px; }
+
+.toggled {
+    font-weight:bold;
+    font-size:larger;
+}
+
+.my-drop-zone {
+    border: dotted 3px lightgray;
+}
+
+.nv-file-over {
+    border: dotted 3px red;
+}
+/* Default class applied to drop zones on over */
+.another-file-over-class {
+    border: dotted 3px green;
+}
+
+
+/* enable scroll bar for modal content */
+.modal-scrollbar-enable {
+    height:600px;
+}
+
+.panel-scroll{
+    position: relative;
+    min-height:500px;
+    height: 100%;
+    overflow: auto;
+}
+
+/* hide the input textbox */
+.image-upload > input
+{
+    display: none;
+}
+
+.urgentFlag {
+    color:red;
+}
+
+.greenFlag {
+    color:green;
+}
+
+.yellowFlag {
+    color:yellow;
+}
+
+tbody.scroll{
+  overflow-y: scroll;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+tr.scroll {
+width: 900%;
+display: inline-table;
+}
+
+table.scroll{
+ height:300px;
+}
+
+body .fc-button {
+    font-size: 0.75em !important;
+}
+
+.fc-toolbar {
+    margin-bottom: 0.8em !important;
+    padding-top: 0.75em !important;
+}
+
+
+/*#region Fader Animation*/
+
+.fader-animation.ng-enter,
+.fader-animation.ng-leave {
+    position: absolute;
+}
+
+.fader-animation.ng-enter {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s 0.5s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s 0.5s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s 0.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s 0.5s;
+}
+
+.fader-animation.ng-leave {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.fader-animation.ng-enter,
+.fader-animation.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.fader-animation.ng-leave,
+.fader-animation.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+/*#endregion */
+
+/*animate show/hide */
+.animate-show,
+.animate-hide {
+  -webkit-transition:all linear 1s;
+  -moz-transition:all linear 1s;
+  -ms-transition:all linear 1s;
+  -o-transition:all linear 1s;
+  transition:all linear 1s;
+}
+
+.animate-show.ng-hide-remove,
+.animate-hide.ng-hide-add.ng-hide-add-active {
+  opacity: 0;
+  display: block !important;
+}
+
+.animate-hide.ng-hide-add,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+  display: block !important;
+}
+
+/*Tam: Use for filter unbatched orders grid*/
+.repeat-animation {
+  box-sizing:border-box;
+  line-height:20px;
+  border:1px solid #ddd;
+}
+
+.repeat-animation.ng-enter-stagger,
+.repeat-animation.ng-leave-stagger,
+.repeat-animation.ng-move-stagger {
+  /* 200ms will be applied between each sucessive enter operation */
+  -webkit-transition-delay:0.2s;
+  transition-delay:0.2s;
+}
+
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+
+.repeat-animation.ng-leave.ng-leave-active,
+.repeat-animation.ng-enter,
+.repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+
+  opacity:0;
+  line-height:0;
+}
+
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move.ng-move-active,
+.repeat-animation.ng-enter.ng-enter-active {
+  opacity:1;
+  line-height:20px;
+}
+
+div.mainMiddle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.centerFlex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.Service{
+  position: relative;
+margin: auto;
+display: block;
+margin-top: 1%;
+margin-left: 15%;
+background: none;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Service td, .Service th {  
+  padding: 12px;
+}
+
+.Service tr:nth-child(even){background-color: #f2f2f2;}
+
+.Service tr:hover {background-color: #ddd;}
+
+.ServicesGrid{
+  position: absolute;
+margin: auto;
+display: block;
+margin-top: 1%;
+margin-left: 2%;
+background: none;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border:1px lightskyblue;  
+  width: 100%;
+}
+
+.AppHeader{
+margin:12px 10px 20px 20px;
+height: 0px !important;
+float: none !important;
+}
+
+.ServicesGrid td, .ServicesGrid th {  
+  padding: 12px;
+  text-align: center;
+  border:1px lightskyblue;  
+  width:200px;
+}
+
+.ServicesGrid tr:nth-child(even){background-color: #f2f2f2;}
+
+.ServicesGrid tr:hover {background-color: #ddd;}
+
+.APIGrid{
+  position: relative;
+margin: 10px;
+border: 1px solid #dddddd;
+display: block;
+margin-top: 1%;
+margin-left: 20%;
+background: none; 
+width:60%;
+text-align: center;
+}
+
+#mainhome {
+    padding: 0;
+    padding-bottom: 52px;
+    min-height: 500px;
+    position: relative;
+}
+
+tr.highlighted {
+    background-color : lightgreen !important;
+}
+
+.block {
+    /*width: 100px;
+    height: 20px;*/
+    align-content:center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-align:center;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 2px lightblue;
+}
+/*TN: Turn off time on calendar - fixed issue 12a*/
+.fc-time{display : none;}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
